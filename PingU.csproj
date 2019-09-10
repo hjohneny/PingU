@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{335DC8FA-B3AE-45BC-A5C9-F0F40EA5489D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetPinger</RootNamespace>
+    <AssemblyName>PingU</AssemblyName>
+    <ApplicationIcon>SeekPng.com_pingu-png_1786540_1786540.ico</ApplicationIcon>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>C:\Users\Hendrix\Desktop\PingU\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4493F11FA117726249FD8E66BEBDB84ABF94F27E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PingU_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="source\IPTraceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\IPTraceForm.Designer.cs">
+      <DependentUpon>IPTraceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="source\CreateSeriesGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\CreateSeriesGroupForm.Designer.cs">
+      <DependentUpon>CreateSeriesGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="source\AddDataSeriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\AddDataSeriesForm.Designer.cs">
+      <DependentUpon>AddDataSeriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="source\ChooseIPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\ChooseIPForm.Designer.cs">
+      <DependentUpon>ChooseIPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="source\EditDataSeriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\EditDataSeriesForm.Designer.cs">
+      <DependentUpon>EditDataSeriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="source\GraphForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\GraphForm.Designer.cs">
+      <DependentUpon>GraphForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="source\GraphManager.cs" />
+    <Compile Include="source\HostDataSeries.cs" />
+    <Compile Include="source\IPScanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\IPScanForm.Designer.cs">
+      <DependentUpon>IPScanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="source\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="source\HostOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\HostOptions.Designer.cs">
+      <DependentUpon>HostOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="source\ListViewDB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="source\Logger.cs" />
+    <Compile Include="source\Options.cs" />
+    <Compile Include="source\PingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\PingForm.Designer.cs">
+      <DependentUpon>PingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="source\Program.cs" />
+    <Compile Include="source\ProgramOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\ProgramOptions.Designer.cs">
+      <DependentUpon>ProgramOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="source\AddDataSeriesForm.resx">
+      <DependentUpon>AddDataSeriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\ChooseIPForm.resx">
+      <DependentUpon>ChooseIPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\CreateSeriesGroupForm.resx">
+      <DependentUpon>CreateSeriesGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\EditDataSeriesForm.resx">
+      <DependentUpon>EditDataSeriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\GraphForm.resx">
+      <DependentUpon>GraphForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\IPScanForm.resx">
+      <DependentUpon>IPScanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\AboutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\HostOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HostOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\IPTraceForm.resx">
+      <DependentUpon>IPTraceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\PingForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\ProgramOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProgramOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="config\graphs.cfg" />
+    <None Include="config\hosts.cfg" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="source\ProgressBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="source\ProgressBarEx.Designer.cs">
+      <DependentUpon>ProgressBarEx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="graphic\0_very_poor.png" />
+    <Content Include="graphic\1_poor.png" />
+    <Content Include="graphic\2_fair.png" />
+    <Content Include="graphic\3_good.png" />
+    <Content Include="graphic\4_very good.png" />
+    <Content Include="graphic\5_excellent.png" />
+    <Content Include="graphic\6_perfect.png" />
+    <Content Include="graphic\BeBounce2.ico" />
+    <Content Include="graphic\Font_Signs_Balls_icon_CRIMSON_3067.png" />
+    <Content Include="graphic\information_16x16.ico" />
+    <Content Include="graphic\mnu_clear.png" />
+    <Content Include="graphic\mnu_clear_all.png" />
+    <Content Include="graphic\mnu_data_series_options.png" />
+    <Content Include="graphic\mnu_graphs.png" />
+    <Content Include="graphic\mnu_help.png" />
+    <Content Include="graphic\mnu_host_add.png" />
+    <Content Include="graphic\mnu_host_remove.png" />
+    <Content Include="graphic\mnu_options.png" />
+    <Content Include="graphic\mnu_program_options.png" />
+    <Content Include="graphic\mnu_save.png" />
+    <Content Include="graphic\mnu_scan.png" />
+    <Content Include="graphic\mnu_start.png" />
+    <Content Include="graphic\mnu_start_all.png" />
+    <Content Include="graphic\mnu_stop all.png" />
+    <Content Include="graphic\mnu_stop.png" />
+    <Content Include="graphic\mnu_traceroute.ico" />
+    <Content Include="graphic\mnu_traceroute.png" />
+    <Content Include="graphic\BeBounce.ico" />
+    <Content Include="graphic\Network_Icon_16.ico" />
+    <Content Include="graphic\Network_Icon_32.ico" />
+    <Content Include="graphic\pinpng.com-pingu-png-2787288-2787288.ico" />
+    <Content Include="graphic\pinpng.com-pingu-png-2787288.png" />
+    <Content Include="graphic\SeekPng.com_pingu-png_1786540.png" />
+    <Content Include="graphic\SeekPng.com_pingu-png_1786540_1786540.ico" />
+    <Content Include="graphic\settings2_16x16.ico" />
+    <Content Include="SeekPng.com_pingu-png_1786540_1786540.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="LiveGraph\LiveGraph.csproj">
+      <Project>{50D1E618-DAD0-46FC-873E-A444680E0727}</Project>
+      <Name>LiveGraph</Name>
+    </ProjectReference>
+    <ProjectReference Include="NetUtils\NetUtils.csproj">
+      <Project>{68D88B29-9028-461F-88A3-CC1C9B0009D8}</Project>
+      <Name>NetUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
