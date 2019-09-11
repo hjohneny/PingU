@@ -13,10 +13,10 @@ By: Hendrix Travers Aloi
 
 ## Patch Release Notes
 
-###v1.0.0.0
+'v1.0.0.0'
 - First Release 
 
-###v1.0.0.1 
+'v1.0.0.1' 
 - Fixed startup window in minimized mode. App startup in normal mode now.
 - Log File automated post install creation. User does not have to create 'pinger.log' file manually.
 
