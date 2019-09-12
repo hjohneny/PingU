@@ -1,12 +1,10 @@
-# PingU v1.0.0.0
+# PingU 
 
 By: Hendrix Travers Aloi
 
 ## Installation
 1. Follow installation guide to set up the software. 
-2. The `.exe` file will be located in `%dir%\PingU_vx.x.x.x\bin\Debug` folder where it is installed.
-3. Upon Installation, create a log file named `pinger.log` into directory `C:\Users\%Username%\AppData\Roaming\NetPinger`. This will store all the logs pinged from PingU.
-4. **Failure to do so may result in an unresponsive software.**
+2. Upon installation, a `.bat` script will be run automatically to create the log entry for PingU.
 
 ## Dependencies 
 - ???
@@ -15,6 +13,9 @@ By: Hendrix Travers Aloi
 
 ### v1.0.0.0
 - First Release 
+1. The `.exe` file will be located in `%dir%\PingU_vx.x.x.x\bin\Debug` folder where it is installed.
+2. Upon Installation, create a log file named `pinger.log` into directory `C:\Users\%Username%\AppData\Roaming\NetPinger`. This will store all the logs pinged from PingU.
+3. **Failure to do so may result in an unresponsive software.**
 
 ### v1.0.0.1 
 - Fixed startup window in minimized mode. App startup in normal mode now.
