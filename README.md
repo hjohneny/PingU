@@ -19,4 +19,6 @@ By: Hendrix Travers Aloi
 ### v1.0.0.1 
 - Fixed startup window in minimized mode. App startup in normal mode now.
 - Log File automated post install creation. User does not have to create 'pinger.log' file manually.
+- Graph function removed.
+- Notification tray icon changed from Red sphere to PingU.
 
